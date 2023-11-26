@@ -8,7 +8,9 @@
     "build": "babel ./src/app.js -d dist",
     "dev": "NODE_ENV=dev nodemon --exec babel-node ./src/app.js",
     "test": "NODE_ENV=test jest",
-    "coverage": "jest --coverage"
+    "coverage": "jest --coverage",
+    "dev:windows": "set NODE_ENV=dev && nodemon --exec babel-node ./src/app.js",
+    "test:windows": "set NODE_ENV=test && jest"
   },
   "keywords": [],
   "author": "",
