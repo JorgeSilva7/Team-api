@@ -5,6 +5,7 @@ import clubRouter from './routers/club.router';
 import authRouter from './routers/auth.router';
 import connectMongo from './configs/mongo';
 import log from './configs/log';
+import cors from 'cors';
 
 const { port } = envs;
 
@@ -12,6 +13,7 @@ const app = Express();
 
 function serverConfigs() {
   app.use(Express.json());
+  app.use(cors());
 }
 
 function loadRoutes() {

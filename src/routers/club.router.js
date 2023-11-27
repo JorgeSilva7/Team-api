@@ -5,7 +5,7 @@ import isAdminMiddleware from '../middlewares/is-admin.middleware';
 
 const router = Router();
 
-router.get('/', authMiddleware, isAdminMiddleware, ClubController.list);
+router.get('/', authMiddleware, ClubController.list);
 router.post('/', authMiddleware, ClubController.create);
 
 router.post('/:clubId/members', authMiddleware, ClubController.addMember);

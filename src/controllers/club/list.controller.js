@@ -7,9 +7,10 @@ import { returnErrorResponse } from '../../errors/error-response';
  * @param {Express.Response} res - Express response
  * @returns {Express.Response} 200 with a list of clubs
  */
-async function list(_req, res) {
+async function list(req, res) {
   try {
-    const clubs = await ClubLogic.list();
+    const { userId } = req;
+    const clubs = await ClubLogic.list(userId);
 
     return res.send({ clubs });
   } catch (error) {

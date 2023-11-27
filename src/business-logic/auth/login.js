@@ -21,12 +21,12 @@ async function comparePassword({ user, candidatePassword }) {
  * Login: Find user by email and compare passwords
  * @param {string} args.email - Input email
  * @param {string} args.password - Input password
- * @returns {string} JWT
+ * @returns {object} JWT and User object
  */
 async function login({ email, password }) {
   const user = await UsersLogic.getOne({
     query: { email: new RegExp(`^${email}$`, 'i') },
-    select: ['password', 'isAdmin'],
+    select: ['password', 'isAdmin', 'name', 'email'],
   });
 
   if (!user) {
@@ -36,11 +36,11 @@ async function login({ email, password }) {
   await comparePassword({ user, candidatePassword: password });
 
   const token = await generateToken({
-    data: { userId: user._id, name: user.name },
+    data: { userId: user._id },
     expiresIn: '1d',
   });
 
-  return token;
+  return { token, user };
 }
 
 export default login;

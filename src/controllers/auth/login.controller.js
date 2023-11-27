@@ -14,9 +14,9 @@ async function login(req, res) {
 
     await loginValidation.validateAsync(body);
 
-    const token = await AuthLogic.login(body);
+    const { token, user } = await AuthLogic.login(body);
 
-    return res.status(200).send({ token });
+    return res.status(200).send({ token, user: { name: user.name, email: user.email } });
   } catch (error) {
     return returnErrorResponse({ error, res });
   }
