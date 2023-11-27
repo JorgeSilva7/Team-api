@@ -39,6 +39,10 @@ const memberSchema = new Schema(
       required: true,
       index: true,
     },
+    subscriptionId: {
+      type: Schema.Types.ObjectId,
+      ref: 'Subscription',
+    },
   },
   { timestamps: true },
 );

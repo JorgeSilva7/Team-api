@@ -10,10 +10,10 @@ import { createValidation } from '../../validations/club.validations';
  */
 async function create(req, res) {
   try {
-    const { body } = req;
+    const { body, userId } = req;
     await createValidation.validateAsync(body);
 
-    const club = await ClubLogic.create(body);
+    const club = await ClubLogic.create({ ...body, adminId: userId });
 
     return res.status(201).send({ club });
   } catch (error) {

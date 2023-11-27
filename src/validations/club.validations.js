@@ -24,13 +24,6 @@ const createValidation = Joi.object()
         code: validationStatusCode,
       }),
     ),
-    adminId: requiredString(
-      new HTTPError({
-        name: validationErrorName,
-        message: clubErrors.validation.messages.adminId,
-        code: validationStatusCode,
-      }),
-    ),
   });
 
 export { createValidation };

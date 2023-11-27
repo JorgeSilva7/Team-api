@@ -1,3 +1,4 @@
+import MemberModel from '../../models/member/member.model';
 import SubscriptionModel from '../../models/subscription/subscription.model';
 import ClubLogic from '../club';
 
@@ -11,7 +12,16 @@ async function listByClub({ clubId, userId }) {
   await ClubLogic.checkIfUserIsAdmin({ clubId, userId });
 
   const subscriptions = await SubscriptionModel.find({ clubId });
-  return subscriptions;
+  const resultSubscriptions = await Promise.all(
+    subscriptions.map(async (subscription) => {
+      const members = await MemberModel.find({ subscriptionId: subscription._id });
+      return {
+        ...subscription.toObject(),
+        members: members.length,
+      };
+    }),
+  );
+  return resultSubscriptions;
 }
 
 export default listByClub;
