@@ -1,8 +1,8 @@
-import HTTPError from '../../errors/http.error';
-import subscriptionErrors from '../../errors/subscription.errors';
-import SubscriptionModel from '../../models/subscription/subscription.model';
-import ClubLogic from '../club';
-import checkClubExists from '../../utils/check-club-exists.util';
+import HTTPError from '../../errors/http.error.js';
+import subscriptionErrors from '../../errors/subscription.errors.js';
+import SubscriptionModel from '../../models/subscription/subscription.model.js';
+import ClubLogic from '../club/index.js';
+import checkClubExists from '../../utils/check-club-exists.util.js';
 
 /**
  * Create Subscription

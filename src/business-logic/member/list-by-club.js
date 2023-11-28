@@ -1,5 +1,5 @@
-import MemberModel from '../../models/member/member.model';
-import ClubLogic from '../club';
+import MemberModel from '../../models/member/member.model.js';
+import ClubLogic from '../club/index.js';
 
 /**
  * List all members on specific club

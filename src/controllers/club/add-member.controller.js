@@ -1,6 +1,6 @@
-import MemberLogic from '../../business-logic/member';
-import { returnErrorResponse } from '../../errors/error-response';
-import { addValidation } from '../../validations/member.validations';
+import MemberLogic from '../../business-logic/member/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
+import { addValidation } from '../../validations/member.validations.js';
 
 /**
  * Add a member to a specific club

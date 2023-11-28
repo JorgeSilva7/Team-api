@@ -1,6 +1,8 @@
-import { JsonWebTokenError } from 'jsonwebtoken';
-import log from '../configs/log';
-import HTTPError from './http.error';
+import jwt from 'jsonwebtoken';
+import log from '../configs/log.js';
+import HTTPError from './http.error.js';
+
+const { JsonWebTokenError } = jwt;
 
 /**
  * Error reusable response

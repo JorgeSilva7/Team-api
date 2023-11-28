@@ -1,5 +1,5 @@
-import UsersLogic from '../../business-logic/users';
-import { returnErrorResponse } from '../../errors/error-response';
+import UsersLogic from '../../business-logic/users/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
 
 async function list(_req, res) {
   try {

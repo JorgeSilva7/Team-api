@@ -1,5 +1,5 @@
-import MemberLogic from '../../business-logic/member';
-import { returnErrorResponse } from '../../errors/error-response';
+import MemberLogic from '../../business-logic/member/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
 
 /**
  * List members

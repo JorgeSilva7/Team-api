@@ -1,8 +1,8 @@
 import Joi from 'joi';
-import { requiredEmail, requiredString } from './schema-common-types';
-import envs from '../configs/environment';
-import HTTPError from '../errors/http.error';
-import authErrors from '../errors/auth.errors';
+import { requiredEmail, requiredString } from './schema-common-types.js';
+import envs from '../configs/environment.js';
+import HTTPError from '../errors/http.error.js';
+import authErrors from '../errors/auth.errors.js';
 
 const { validationStatusCode } = envs;
 const validationErrorName = authErrors.login.validation.name;

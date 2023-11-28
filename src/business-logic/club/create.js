@@ -1,5 +1,5 @@
-import ClubModel from '../../models/club/club.model';
-import UserLogic from '../users';
+import ClubModel from '../../models/club/club.model.js';
+import UserLogic from '../users/index.js';
 
 /**
  * Create club

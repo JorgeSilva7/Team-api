@@ -1,5 +1,5 @@
-import ClubLogic from '../../business-logic/club';
-import { returnErrorResponse } from '../../errors/error-response';
+import ClubLogic from '../../business-logic/club/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
 
 /**
  * List clubs

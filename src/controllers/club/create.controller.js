@@ -1,6 +1,6 @@
-import ClubLogic from '../../business-logic/club';
-import { returnErrorResponse } from '../../errors/error-response';
-import { createValidation } from '../../validations/club.validations';
+import ClubLogic from '../../business-logic/club/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
+import { createValidation } from '../../validations/club.validations.js';
 
 /**
  * Create club

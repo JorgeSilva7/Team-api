@@ -1,6 +1,6 @@
-import UsersLogic from '../../business-logic/users';
-import { returnErrorResponse } from '../../errors/error-response';
-import { createValidation } from '../../validations/user.validations';
+import UsersLogic from '../../business-logic/users/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
+import { createValidation } from '../../validations/user.validations.js';
 
 async function create(req, res) {
   try {

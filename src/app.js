@@ -1,10 +1,10 @@
 import Express from 'express';
-import envs from './configs/environment';
-import userRouter from './routers/user.router';
-import clubRouter from './routers/club.router';
-import authRouter from './routers/auth.router';
-import connectMongo from './configs/mongo';
-import log from './configs/log';
+import envs from './configs/environment.js';
+import userRouter from './routers/user.router.js';
+import clubRouter from './routers/club.router.js';
+import authRouter from './routers/auth.router.js';
+import connectMongo from './configs/mongo.js';
+import log from './configs/log.js';
 import cors from 'cors';
 
 const { port } = envs;

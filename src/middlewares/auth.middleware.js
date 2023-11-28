@@ -1,6 +1,6 @@
-import { returnErrorResponse } from '../errors/error-response';
-import HTTPError from '../errors/http.error';
-import { verifyToken } from '../utils/jwt.util';
+import { returnErrorResponse } from '../errors/error-response.js';
+import HTTPError from '../errors/http.error.js';
+import { verifyToken } from '../utils/jwt.util.js';
 
 /**
  * Auth middleware checks if token exists and is a valid JWT (formed and not expired)

@@ -1,4 +1,4 @@
-import { required, mustBe, requiredAndValid } from './common.messages';
+import { required, mustBe, requiredAndValid } from './common.messages.js';
 
 const ref = 'subscription';
 

@@ -1,7 +1,7 @@
-import authErrors from '../../errors/auth.errors';
-import HTTPError from '../../errors/http.error';
-import UsersLogic from '../users';
-import { generateToken } from '../../utils/jwt.util';
+import authErrors from '../../errors/auth.errors.js';
+import HTTPError from '../../errors/http.error.js';
+import UsersLogic from '../users/index.js';
+import { generateToken } from '../../utils/jwt.util.js';
 
 /**
  * Compare the user password with the candidate password

@@ -1,6 +1,6 @@
-import MemberModel from '../../models/member/member.model';
-import SubscriptionModel from '../../models/subscription/subscription.model';
-import ClubLogic from '../club';
+import MemberModel from '../../models/member/member.model.js';
+import SubscriptionModel from '../../models/subscription/subscription.model.js';
+import ClubLogic from '../club/index.js';
 
 /**
  * List all subscriptions by club

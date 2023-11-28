@@ -1,4 +1,4 @@
-import listByClub from './list-by-club';
-import create from './create';
+import listByClub from './list-by-club.js';
+import create from './create.js';
 
 export default { create, listByClub };

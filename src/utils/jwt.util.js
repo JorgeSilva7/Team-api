@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import envs from '../configs/environment';
+import envs from '../configs/environment.js';
 
 const {
   JWT: { SECRET, DEFAULT_EXPIRES },

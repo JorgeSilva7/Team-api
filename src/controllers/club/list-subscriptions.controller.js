@@ -1,5 +1,5 @@
-import SubscriptionLogic from '../../business-logic/subscription';
-import { returnErrorResponse } from '../../errors/error-response';
+import SubscriptionLogic from '../../business-logic/subscription/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
 
 /**
  * List subscriptions

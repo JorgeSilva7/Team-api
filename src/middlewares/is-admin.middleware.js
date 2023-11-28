@@ -1,6 +1,6 @@
-import { returnErrorResponse } from '../errors/error-response';
-import HTTPError from '../errors/http.error';
-import UserModel from '../models/user/user.model';
+import { returnErrorResponse } from '../errors/error-response.js';
+import HTTPError from '../errors/http.error.js';
+import UserModel from '../models/user/user.model.js';
 
 /**
  * Is admin middleware checks if the current logged user (req.userId) has the isAdmin field set to true

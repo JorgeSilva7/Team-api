@@ -1,5 +1,5 @@
-import list from './list';
-import getOne from './get-one';
-import create from './create';
+import list from './list.js';
+import getOne from './get-one.js';
+import create from './create.js';
 
 export default { list, getOne, create };

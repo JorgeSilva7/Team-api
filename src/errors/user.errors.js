@@ -1,4 +1,4 @@
-import { required, requiredAndValid } from './common.messages';
+import { required, requiredAndValid } from './common.messages.js';
 
 const ref = 'user';
 

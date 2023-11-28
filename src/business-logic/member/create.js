@@ -1,8 +1,8 @@
-import HTTPError from '../../errors/http.error';
-import memberErrors from '../../errors/member.errors';
-import MemberModel from '../../models/member/member.model';
-import ClubLogic from '../club';
-import checkClubExists from '../../utils/check-club-exists.util';
+import HTTPError from '../../errors/http.error.js';
+import memberErrors from '../../errors/member.errors.js';
+import MemberModel from '../../models/member/member.model.js';
+import ClubLogic from '../club/index.js';
+import checkClubExists from '../../utils/check-club-exists.util.js';
 
 /**
  * Create member

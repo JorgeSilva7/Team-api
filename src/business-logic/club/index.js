@@ -1,6 +1,6 @@
-import list from './list';
-import create from './create';
-import get from './get';
-import checkIfUserIsAdmin from './check-is-admin';
+import list from './list.js';
+import create from './create.js';
+import get from './get.js';
+import checkIfUserIsAdmin from './check-is-admin.js';
 
 export default { create, list, get, checkIfUserIsAdmin };

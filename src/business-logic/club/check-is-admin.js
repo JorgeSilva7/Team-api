@@ -1,6 +1,6 @@
-import clubErrors from '../../errors/club.errors';
-import HTTPError from '../../errors/http.error';
-import ClubModel from '../../models/club/club.model';
+import clubErrors from '../../errors/club.errors.js';
+import HTTPError from '../../errors/http.error.js';
+import ClubModel from '../../models/club/club.model.js';
 
 /**
  * Check if the user is the admin of the club

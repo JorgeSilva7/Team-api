@@ -1,3 +1,3 @@
-import login from './login';
+import login from './login.js';
 
 export default { login };

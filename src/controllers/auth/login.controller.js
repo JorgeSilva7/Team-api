@@ -1,6 +1,6 @@
-import AuthLogic from '../../business-logic/auth';
-import { returnErrorResponse } from '../../errors/error-response';
-import { loginValidation } from '../../validations/auth.validations';
+import AuthLogic from '../../business-logic/auth/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
+import { loginValidation } from '../../validations/auth.validations.js';
 
 /**
  * User Login controller

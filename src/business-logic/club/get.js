@@ -1,4 +1,4 @@
-import ClubModel from '../../models/club/club.model';
+import ClubModel from '../../models/club/club.model.js';
 
 /**
  * Get Club

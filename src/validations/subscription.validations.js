@@ -1,8 +1,8 @@
 import Joi from 'joi';
-import subscriptionErrors from '../errors/subscription.errors';
-import { optionalString, requiredNumber, requiredString } from './schema-common-types';
-import envs from '../configs/environment';
-import HTTPError from '../errors/http.error';
+import subscriptionErrors from '../errors/subscription.errors.js';
+import { optionalString, requiredNumber, requiredString } from './schema-common-types.js';
+import envs from '../configs/environment.js';
+import HTTPError from '../errors/http.error.js';
 
 const { validationStatusCode } = envs;
 const validationErrorName = subscriptionErrors.validation.name;

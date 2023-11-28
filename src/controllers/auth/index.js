@@ -1,3 +1,3 @@
-import login from './login.controller';
+import login from './login.controller.js';
 
 export default { login };

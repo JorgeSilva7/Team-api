@@ -1,5 +1,5 @@
-import UserModel from '../models/user/user.model';
-import envs from './environment';
+import UserModel from '../models/user/user.model.js';
+import envs from './environment.js';
 
 const { createAdmin } = envs;
 

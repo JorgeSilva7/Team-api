@@ -1,7 +1,7 @@
 import mongoose from 'mongoose';
-import envs from './environment';
-import initialData from './initial-data';
-import log from './log';
+import envs from './environment.js';
+import initialData from './initial-data.js';
+import log from './log.js';
 
 const { mongo } = envs;
 
@@ -9,9 +9,9 @@ const { mongo } = envs;
  * Load all models
  */
 async function loadModels() {
-  await import('../models/user/user.model');
-  await import('../models/member/member.model');
-  await import('../models/club/club.model');
+  await import('../models/user/user.model.js');
+  await import('../models/member/member.model.js');
+  await import('../models/club/club.model.js');
 }
 
 let mongoInstance;

@@ -1,6 +1,6 @@
-import SubscriptionLogic from '../../business-logic/subscription';
-import { returnErrorResponse } from '../../errors/error-response';
-import { addValidation } from '../../validations/subscription.validations';
+import SubscriptionLogic from '../../business-logic/subscription/index.js';
+import { returnErrorResponse } from '../../errors/error-response.js';
+import { addValidation } from '../../validations/subscription.validations.js';
 
 /**
  * Create subscription

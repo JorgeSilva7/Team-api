@@ -1,4 +1,4 @@
-import ClubLogic from '../business-logic/club';
+import ClubLogic from '../business-logic/club/index.js';
 
 /**
  * Check if the club exists in Club collection
