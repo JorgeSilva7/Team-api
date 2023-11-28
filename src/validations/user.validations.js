@@ -26,5 +26,7 @@ const createValidation = Joi.object()
     ),
   });
 
+const bulkCreateValidation = Joi.array().items(createValidation);
+
 // eslint-disable-next-line import/prefer-default-export
-export { createValidation };
+export { createValidation, bulkCreateValidation };
